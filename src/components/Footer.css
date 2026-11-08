@@ -1,0 +1,6 @@
+.footer { background: var(--espresso); color: var(--ivory); padding: 3rem 0; text-align: center; }
+.footer-brand { font-family: 'Playfair Display', serif; font-size: 1.5rem; letter-spacing: 0.1em; margin-bottom: 0.5rem; }
+.footer-tag { color: var(--gold); font-size: 0.8rem; letter-spacing: 0.25em; text-transform: uppercase; margin-bottom: 1.5rem; }
+.footer-copy { font-size: 0.85rem; color: rgba(248,244,237,0.6); margin-bottom: 0.5rem; }
+.footer-credit a { color: var(--gold); transition: color 0.3s; }
+.footer-credit a:hover { color: var(--ivory); }

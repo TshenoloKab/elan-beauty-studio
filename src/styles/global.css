@@ -1,0 +1,131 @@
+:root {
+  --ivory: #F8F4ED;
+  --champagne: #E8D9C5;
+  --rose: #C58F91;
+  --gold: #B69A65;
+  --espresso: #352A27;
+  --white: #FFFFFF;
+  --text: #352A27;
+  --text-soft: #6B5A54;
+  --border: rgba(53, 42, 39, 0.12);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text);
+  background: var(--ivory);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1,h2,h3,h4 { font-family: 'Playfair Display', 'Cormorant Garamond', serif; font-weight: 500; letter-spacing: -0.01em; }
+
+img { max-width: 100%; height: auto; display: block; }
+
+a { text-decoration: none; color: inherit; }
+
+.container { max-width: 1240px; margin: 0 auto; padding: 0 2rem; }
+
+.section { padding: 7rem 0; position: relative; }
+
+.section-header { text-align: center; max-width: 720px; margin: 0 auto 4rem; }
+
+.section-label {
+  display: inline-block;
+  color: var(--gold);
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.section-title {
+  font-size: 2.75rem;
+  color: var(--espresso);
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-soft);
+  line-height: 1.8;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.95rem 2.25rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 0;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  border: 1px solid transparent;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+}
+
+.btn-primary {
+  background-color: var(--espresso);
+  color: var(--ivory);
+  border-color: var(--espresso);
+}
+
+.btn-primary:hover {
+  background-color: var(--gold);
+  border-color: var(--gold);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(53,42,39,0.2);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--ivory);
+  border-color: var(--ivory);
+}
+
+.btn-secondary:hover {
+  background-color: var(--ivory);
+  color: var(--espresso);
+  transform: translateY(-2px);
+}
+
+.btn-gold {
+  background-color: var(--gold);
+  color: var(--white);
+  border-color: var(--gold);
+}
+
+.btn-gold:hover {
+  background-color: var(--espresso);
+  border-color: var(--espresso);
+  transform: translateY(-2px);
+}
+
+/* Botswana-inspired subtle geometric divider pattern */
+.bw-pattern {
+  background-image:
+    repeating-linear-gradient(45deg, rgba(182,154,101,0.06) 0 2px, transparent 2px 12px),
+    repeating-linear-gradient(-45deg, rgba(197,143,145,0.05) 0 2px, transparent 2px 12px);
+}
+
+@media (max-width: 968px) {
+  .section { padding: 4.5rem 0; }
+  .section-title { font-size: 2.1rem; }
+  .section-subtitle { font-size: 1rem; }
+}
+@media (max-width: 640px) {
+  .container { padding: 0 1.25rem; }
+  .section { padding: 3.5rem 0; }
+  .section-header { margin-bottom: 2.5rem; }
+  .section-title { font-size: 1.75rem; }
+}

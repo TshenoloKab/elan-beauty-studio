@@ -1,0 +1,15 @@
+.bridal { background: var(--espresso); color: var(--ivory); }
+.bridal .section-title { color: var(--ivory); }
+.bridal .section-subtitle { color: rgba(248,244,237,0.75); }
+.bridal .section-label { color: var(--gold); }
+.bridal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+.bridal-img { aspect-ratio: 4/5; overflow: hidden; position: relative; }
+.bridal-img img { width: 100%; height: 100%; object-fit: cover; }
+.bridal-img::before { content: ''; position: absolute; inset: 1.5rem 1.5rem -1.5rem -1.5rem; border: 1px solid var(--gold); z-index: -1; }
+.bridal-list { list-style: none; margin: 2rem 0; }
+.bridal-list li { padding: 0.9rem 0; border-bottom: 1px solid rgba(248,244,237,0.15); font-size: 1.05rem; display: flex; align-items: center; gap: 0.75rem; }
+.bridal-list li::before { content: ''; width: 8px; height: 8px; border: 1px solid var(--gold); transform: rotate(45deg); }
+@media (max-width: 968px) {
+  .bridal-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .bridal-img::before { display: none; }
+}
